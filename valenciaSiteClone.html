@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Valencia site clone</title>
+<style>
+body {
+    width: 100%;
+    background-color: #ededed;
+    
+}
+.container {display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.box {flex: 1;
+background-color: white;
+border: 3px solid black;
+padding: 10%;}
+
+
+.imageBanner {background-color: azure;
+width: 50%;
+margin-left: 25%;
+height: 400px;
+margin-bottom: 10px;}
+
+nav {
+        background-color: darkgray;
+        font-weight: bolder;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+      nav ul li {
+        display: inline-block;
+        position: relative;
+        margin: 5px;
+      }
+      
+      nav ul li a {
+        margin-top: 14px;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 15px;
+      }
+      
+      nav ul li:hover > ul {
+        display: block;
+      }
+      
+      nav ul ul {
+        display: none;
+        position: absolute;
+        background-color: black;
+        margin-top: 0;
+      }
+      
+      nav ul ul li {
+        width: 200px;
+        float: none;
+        display: list-item;
+        position: relative;
+      }
+      
+      nav ul ul li a {
+        padding: 10px 20px;
+      }
+      
+      nav ul ul ul li {
+        position: relative;
+        top: -60px;
+        left: 200px;
+      }
+      
+      nav ul li:hover {
+        color: coral;
+      }
+      
+      nav ul ul li a:hover {
+        color: #ffcc00;
+      }
+      
+      nav ul::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      .buttonContainer1 {
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+    .buttonContainer1 button {width: 30px; height: 30px; border-radius: 50px; margin-right: 10px; justify-content: center; margin-top: 35px; }
+
+
+
+
+    .panel-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: -150px;
+        margin-left: 10%;
+        width: 75%;
+      }
+
+      
+      
+      .panel.large {
+        height: 300px;
+        background-color: white;
+        font-size: 30px;
+      }
+      
+      .panel.small {
+        height: 300px;
+        background-color: white;
+        font-size: 30px;
+      }
+
+      footer {
+        background-color: black;
+        
+        text-align: center;
+        height: 500px;
+      }
+
+      .footer-heading {
+        color: orange;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .footer-button {
+        background-color: orange;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 0%;
+        padding-top: 50px;
+        margin-top: 0%;
+      }
+      .button {
+      width: 60px;
+      height: 60px;
+      background-color: #444444;
+      border: 2px solid coral;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 5px;
+      color: coral;
+    }
+
+    .button:hover {
+      background-color: coral;
+    }
+     
+</style>
+</head>
+<header>  <div style="font-size: larger; color: white; width:100% ; background-color: black; height: 170px; padding-left: 20px;"> <img style="width: 80px;
+    padding-top: 10px;"src="valenciaLogo.jpg" alt=""> Webby award honoree + logo <img style="width: 80px;
+padding-top: 10px;" src="pumaLogo.jpg" alt=""> </div>
+</header>
+<body>
+    <nav>
+        <ul>
+        <li><a href="#">MENU</a></li>
+        <li>
+            <a href="#">VCF TEAMS</a>
+            <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">STADIUM</a>
+            <ul>
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">STORE</a></li>
+        <li>
+            <a href="#">VCF MEDIA</a>
+            <ul>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Phone</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CLUB</a></li>
+        </ul>
+
+
+
+
+<div class="buttonContainer1">
+
+        
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button style="background-color: orangered; width: 70px; color: white;" class="button large">Login</button>
+          </div>
+    </nav>
+
+
+
+    <div style="height: 620px;
+    background-image: url(mestalla.jpg); background-size: cover; background-position: center;" class="banner">
+        <button style="background-color: orangered; font-size: 19px; font-weight: bolder; color: white; width: 130px;
+        height: 50px; border: none; border-radius: 30px; margin: 40px; margin-top: 12%; margin-left: 10%;">Read now ></button>
+    </div>
+
+    <div class="panel-container"> 
+      <div style="padding: 10px; margin-left: 80px;" class="panel large">
+        <p> Tuesday, 18 JULY- 18:00 <br> PRE SEASON-ESTADIO ANONIO PUCHADES <br> <br> Valencia CF 5:00 NOTTINGHAM FOREST</p>
+        <h1 style="margin-left: 30%;">22:00:00</h1>
+      </div>
+      
+      <div style="padding: 10px; width: 400px;" class="panel small">
+        Sponsors
+        <h3>TM REAL ESTATE GROUP</h3>
+        <h3>PUMA</h3>
+      </div><div style="padding: 10px; width: 400px;" class="panel large"> 
+        <p>Saturday 22 July 17:00 <br>PRE SEASON <br></p>
+        <h1 style="margin-left: 10%;">36:00:00</h1>
+      </div>
+    </div>
+
+
+    
+
+
+<h1 style=" margin-left:19%; color: orangered;"> Valencia CF news</h1>
+
+<div style=" width: 65%; background-color: grey; justify-content: space-evenly; flex-wrap: wrap; margin-left: 18%;" class="container"> 
+
+    
+<div class="box" style="background-color: orangered; color: white; height: 66%;">LALIGA FIXTURES</div>
+
+<div class="box">LALIGA SCHEDULE</div>
+
+<div class="box">3</div>
+
+<div class="box">4</div>
+
+<div class="box">5</div>
+<div class="box">6</div>
+<div class="box">7</div>
+<div class="box">8</div>
+<div class="box">5</div>
+
+
+
+</div>
+
+<h1 style=" margin-left:19%; color: orangered;"> Match report</h1>
+
+<div style=" width: 65%; background-color: grey; justify-content: space-evenly; flex-wrap: wrap; margin-left: 18%;
+" class="container"> 
+
+
+    <div class="box">1</div>
+    
+    <div class="box">2</div>
+    
+    <div class="box">3</div>
+    
+    <div class="box">4</div>
+    
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">5</div>
+    
+    
+    
+    </div>
+
+
+
+<div style="background-image: url(tmrealestate.jpg);" class="imageBanner">
+
+</div>
+<div style="background-image: url(valenciaKit.jpg);" class="imageBanner">
+    
+</div>
+<div style="background-image: url(valenciaKit.jpg);" class="imageBanner">
+    
+</div>
+
+<h1 style=" margin-left:19%; color: orangered;"> Club</h1>
+<div style=" width: 65%; background-color: grey; justify-content: space-evenly; flex-wrap: wrap; margin-left: 18%;" class="container">
+
+
+    <div class="box">1</div>
+    
+    <div class="box">2</div>
+    
+    <div class="box">3</div>
+    
+    <div class="box">4</div>
+    
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">5</div>
+    
+    
+    
+    </div>
+
+
+
+
+    <div style=" width: 65%; background-color: #ededed; justify-content: space-evenly; flex-wrap: wrap; margin-left: 18%;" class="container">
+
+
+        <div style="margin: 5px; background-image: url(mestalla.jpg); background-size: cover; background-position: center;" class="box"> <button style=" 
+            width: 200px; border-radius: 5%; height: 75px; color: white; background-color: coral; font-size: 20px; font-weight: bold; margin-left: 5%; "> DISCOVER OUR STADIUM ></button></div>
+        
+       <div style="font-weight: bolder; font-size: 50px; margin: 5px; color: #ededed; background-color: black;" class="box"> SAIYUN TYRE <br>VALENCIA CF GLOBAL TYRE PARTNER</div>
+        
+        
+        
+        </div>
+        
+
+        <div class="carousel-container">
+            <div class="carousel">
+              <div class="tile">Tile 1</div>
+              <div class="tile">Tile 2</div>
+              <div class="tile">Tile 3</div>
+              <div class="tile">Tile 4</div>
+              <div class="tile">Tile 5</div>
+            </div>
+            
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+          </div>
+
+
+
+            <div style=" padding-top: 3%; background-color: grey; height: 500px; width:  100%; font-size: 29px; color: black;">
+              <nav class="sponsors">
+                <ul style="display:flex; justify-content: center; margin-top: 8%;">
+                <li><a href="#">TM Real estate</a></li>
+                <li><a href="#">PUMA</a></li>
+              </ul>
+              <ul style="display: flex; margin-top: 3%; justify-content: center;">
+                <li><a href="#">Herrero</a></li>
+                <li><a href="#">Sailun tyres</a></li>
+                <li><a href="#">SKODA</a></li>
+              </ul>
+              <ul style="display: flex; margin-top: 3%; justify-content: center;">
+                <li><a href="#">VCF FAN </a></li>
+                <li><a href="#">.x</a></li>
+                <li><a href="#">CocaCola</a></li>
+                <li><a href="#">Amstel</a></li>
+              </ul>
+              <ul style="display: flex; margin-top: 3%; justify-content: center;">
+                <li><a href="#">Acronis</a></li>
+                <li><a href="#">Zumub</a></li>
+                <li><a href="#">Btravel</a></li>
+                <li><a href="#">VITALDENT</a></li>
+                <li><a href="#">Vueling</a></li>
+                <li><a href="#">BLACKCAPE</a></li>
+                <li><a href="#">SORARE</a></li>
+              </ul></nav>
+            </div>
+          
+        <footer>
+            <div class="footer-container">
+                <div>
+                    <h3 class="footer-heading">Social Media</h3>
+                    <button style="background-color: black; border: 2px solid coral; color: coral;" class="footer-button">Button 1</button>
+                <div style=" display: flex; margin-top: 15px; flex; justify-content: space-evenly;"><button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                    <button style="width: 50px;
+                    height: 50px;
+                    border-radius: 50%;" class="button">1</button>
+                    <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button> <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button><button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button><button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">VALENCIA CF 104 YEARS</h3>
+                    <button style="background-color: black; border: 2px solid coral; color: coral;" class="footer-button">FIND OUT MORE</button> <br> <br>
+            <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>
+                <button style="width: 50px;
+                height: 50px;
+                border-radius: 50%;" class="button">1</button>    </div>
+                
+                <div>
+                    <h3 class="footer-heading">VCF NEWSLETTER</h3>
+                    <button style="background-color: black; border: 2px solid coral; color:coral;" class="footer-button">SUBSCRIBE HERE</button> <br> <br>
+                
+                
+                <button style="width: 50px;
+            height: 50px;
+            border-radius: 50%;" class="button">1</button>
+            <button style="width: 50px;
+            height: 50px;
+            border-radius: 50%;" class="button">1</button>
+            <button style="width: 50px;
+            height: 50px;
+            border-radius: 50%;" class="button">1</button>
+            </div>
+            
+        </footer>
+</body>
+</html>
